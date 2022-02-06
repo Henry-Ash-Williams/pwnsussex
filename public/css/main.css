@@ -7,7 +7,6 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    /*  justify-content: center; */
     align-items: center;
     height: 100%;
 }
@@ -30,20 +29,8 @@ header p {
 
 #flag-input:focus {
     outline: none;
-    caret: #a6a6a6 underscore;
 }
 
 #flag-input::placeholder {
     color: #a6a6a6;
-}
-
-#blinking-cursor {
-    animation: blinker 1s linear infinite;
-}
-
-@keyframes blinker {
-    0% { opacity: 1; }
-    49% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 0; }
 }
