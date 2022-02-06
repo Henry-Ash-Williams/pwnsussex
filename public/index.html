@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>pwnsussex</title>
+        <link rel="stylesheet" href="./css/normalize.css" type="text/css">
+        <link rel="stylesheet" href="./css/main.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+         $(document).ready(() => {
+             document.cookie = "flag=FLAG{sk9hs-Lc6KJ-CDaJp-KzY3i-mEgNE-RPv7}";
+         });
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>pwnsussex</h1>
+            <p>University of Sussex's first CTF team</p>
+            <p>Find the flag in this website to be invited to our discord</p>
+            <form method="POST" id="flag-form" action="/flag">
+                <label for="flag">root@pwnsussex % </label>
+                <input type="text" name="flag" placeholder="FLAG{7h15-FL4g-15-f4K3}" id="flag-input" autofocus />
+                <br/>
+                <input type="submit" name="flag-submit" value="submit" />
+            </form>
+        </header>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+body {
+    background: #222;
+    color: #eeeeee;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    /*  justify-content: center; */
+    align-items: center;
+    height: 100%;
+}
+
+header h1 {
+    font-size: 6vw;
+}
+
+header p {
+    font-size: 3vw;
+}
+
+#flag-input {
+    background: transparent;
+    border: none;
+    color: #eee;
+    width: 250px;
+}
+
+#flag-input:focus {
+    outline: none;
+    caret: #a6a6a6 underscore;
+}
+
+#flag-input::placeholder {
+    color: #a6a6a6;
+}
+
+#blinking-cursor {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    0% { opacity: 1; }
+    49% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
