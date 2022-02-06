@@ -8,14 +8,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "../public")));
 
 app.get("/", (req, res) => {
-  res.setHeader("Set-Cookie", process.ENV.flag);
+  res.setHeader("Set-Cookie", process.env.FLAG);
   res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
 app.post("/flag", (req, res) => {
   const flag = req.body.flag;
-  if (flag === "FLAG{sk9hs-Lc6KJ-CDaJp-KzY3i-mEgNE-RPv7}") {
-    res.redirect("https://discord.gg/ZSamQBH9cZ");
+  if (flag === process.env.FLAG) {
+    res.redirect(process.env.DISCORD);
   } else {
     res.redirect("/");
   }
