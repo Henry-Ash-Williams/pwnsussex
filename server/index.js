@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "../public")));
 
 app.get("/", (req, res) => {
-  res.setHeader("Set-Cookie", "flag=FLAG{sk9hs-Lc6KJ-CDaJp-KzY3i-mEgNE-RPv7}");
+  res.setHeader("Set-Cookie", process.ENV.flag);
   res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
